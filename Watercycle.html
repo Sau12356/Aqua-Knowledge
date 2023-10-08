@@ -9,6 +9,11 @@
     <link rel="icon" href="aqua.png" type="image/x-icon">
 
     <style>
+        html, body {
+  height: 100%;
+  overflow:  scroll;
+}
+
         header {
               position: relative;
 
@@ -21,16 +26,11 @@
             width: 300px; 
             height: 300px; 
         }
-        body {
-            background-color: #f0f0f0; /* Replace with your desired background color */
-            background-image: url(''); /* Repce with your desired background image path */
-            background-size: cover; /* Adjust to cover the entire viewport */
-            background-repeat: no-repeat; /* Prevent background image from repeating */
-        }
+        
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow: scroll;
         }
 
         #video-background {
@@ -41,6 +41,7 @@
             height: 100%;
             object-fit: cover;
             z-index: -1; 
+            opacity: 0.5;
         }
         centered-text {
     text-align: center; 
@@ -64,7 +65,7 @@
             <a class="mr-5 hover:text-gray-100" href="index.html">Home</a>
             <a class="mr-5 hover:text-gray-100" href="climatechange.html">Climate Change</a>
             <a class="mr-5 hover:text-gray-100" href="Watercycle.html"> Water Cycle</a>
-            <a class="mr-5 hover:text-gray-100" href="solution.html">Solutions</a>
+            <a class="mr-5 hover:text-gray-100" href="watercrisis.html">Water crisis Solution</a>
           </nav>
           <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Let's Learn
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
@@ -73,15 +74,60 @@
           </button>
         </div>
       </header>
-      <div class="centered-text">
       <section class="text-gray-600 body-font">
-        <div class="container px-5 py-24 mx-auto">
-          <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-200">"Riding the Waves of Change: A Water Resilience Revolution"<br><br> Our mission is to understand, adapt to, and mitigate the effects of climate change on the water cycle. We delve into the science, data, and real-world impacts, seeking solutions that can ensure a sustainable water future for generations to come.            </h1>
-            <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0"> Explore </button>
-          </div>
-        </div>
+  <div class="container px-5 py-24 mx-auto">
+    <div class="flex flex-col">
+      <div class="h-1 bg-gray-200 rounded overflow-hidden">
+        <div class="w-24 h-full bg-indigo-500"></div>
       </div>
-      </section> 
+      <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+        <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0">GLOBAL WATER CYCLE</h1>
+        <p class="sm:w-3/5 leading-relaxed text-base sm:pl-10 pl-0"><b>The global water cycle is like a never-ending journey for water all around the Earth. It starts when the sun makes water from oceans, rivers, and lakes go up into the sky. This water forms clouds in the sky, and when those clouds get heavy, they release rain, snow, or other types of weather. Some of this rain soaks into the ground, while other parts flow into rivers and eventually reach the oceans. Even plants help by taking water from the ground and sending it back into the sky. This whole process keeps happening over and over, so the same water is used again and again, making sure there's always enough for us and all the living things on Earth. It's like a giant, never-ending water adventure!</b></p>
+      </div>
+    </div>
+    <div class="flex flex-wrap sm:flex-row flex-col py-6 mb-12">
+        <h1 class="sm:w-2/5 text-gray-900 font-medium title-font text-2xl mb-2 sm:mb-0"> Component of water cycle</h1>
+      </div>
+    <div class="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4">
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="evaporation.png">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5"> Evporation</h2>
+        <p class="text-base leading-relaxed mt-2"> <b>"Evaporation is like a magic trick that happens to water when it gets warm. Imagine a puddle on a sunny day; as the sun shines on it, the water slowly disappears into the air. That's because the sun gives the water little energy boosts, making some of it turn into invisible water vapor. So, when you see a puddle shrinking or clothes drying outside, it's all because of evaporation, the disappearing act of water turning into vapor when it gets warm!"
+        </b></p>
+        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="condensation.png">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5"> Condensation </h2>
+        <p class="text-base leading-relaxed mt-2"><b>"Condensation is when invisible water vapor in the air turns into tiny water droplets that we can see. It happens when the air gets cool, like when you breathe on a cold window, and your breath turns into tiny water droplets. These water droplets can come together to make clouds in the sky and even rain or snow. So, condensation is like magic water making itself visible in the air!"</b></p>
+        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+      <div class="p-4 md:w-1/3 sm:mb-0 mb-6">
+        <div class="rounded-lg h-64 overflow-hidden">
+          <img alt="content" class="object-cover object-center h-full w-full" src="precipitation.png">
+        </div>
+        <h2 class="text-xl font-medium title-font text-gray-900 mt-5">Precipitation</h2>
+        <p class="text-base leading-relaxed mt-2"><b>"Precipitation is like a gift from the sky. Imagine clouds as fluffy collections of tiny water or ice pieces. Sometimes, when these pieces get heavy, they fall down to the ground. If they're tiny and light, it's like rain. If they're cold and icy, it's snow. Sometimes, they can even be little ice pellets called sleet or hard balls called hail. Precipitation brings us rainbows, makes plants happy, and gives us snow to play in during winter!"</b></p>
+        <a class="text-indigo-500 inline-flex items-center mt-3">Learn More
+          <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-2" viewBox="0 0 24 24">
+            <path d="M5 12h14M12 5l7 7-7 7"></path>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
 </body>
 </html>
