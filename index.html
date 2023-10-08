@@ -30,7 +30,7 @@
         body {
             margin: 0;
             padding: 0;
-            overflow: hidden;
+            overflow: scroll;
         }
 
         #video-background {
@@ -47,7 +47,21 @@
     position: absolute;
     top: 50%; 
     left: 50%; 
-    transform: translate(-50%, -50%); 
+    transform: translate(-50%, -50%);}
+    /* Center the container itself */
+.video-container {
+    display: flex;
+    justify-content: center; /* Horizontal centering */
+    align-items: center; /* Vertical centering */
+    height: 100vh; /* Make the container full viewport height */
+}
+
+/* Customize video styles as needed */
+.video-container video {
+    max-width: 100%; /* Ensure the video doesn't exceed its container width */
+    max-height: 100%; /* Ensure the video doesn't exceed its container height */
+}
+ 
     </style>
 </head>
 <body>
@@ -55,7 +69,7 @@
         <source src="animation1.mp4" type="video/mp4">
         Your browser does not support the video tag.
     </video>
-    <header class="text-gray-600 body-font">
+    <header class="text-gray-100 body-font">
         <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
           <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
            <img src="KNOWLEDGE.png" alt="logo" class="logo" >
@@ -64,9 +78,9 @@
             <a class="mr-5 hover:text-gray-100" href="index.html">Home</a>
             <a class="mr-5 hover:text-gray-100" href="climatechange.html">Climate Change</a>
             <a class="mr-5 hover:text-gray-100" href="Watercycle.html"> Water Cycle</a>
-            <a class="mr-5 hover:text-gray-100"href="solution.html" >Solutions</a>
+            <a class="mr-5 hover:text-gray-100"href="watercrisis.html" >Water Crisis Solution</a>
           </nav>
-          <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Let's Learn
+          <button class="inline-flex items-center bg-gray-900 border-0 py-1 px-3 focus:outline-none hover:bg-gray-200 rounded text-base mt-4 md:mt-0">Let's Learn
             <svg fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
               <path d="M5 12h14M12 5l7 7-7 7"></path>
             </svg>
@@ -77,11 +91,32 @@
       <section class="text-gray-600 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="lg:w-2/3 flex flex-col sm:flex-row sm:items-center items-start mx-auto">
-            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-200">"Riding the Waves of Change: A Water Resilience Revolution"<br><br> Our mission is to understand, adapt to, and mitigate the effects of climate change on the water cycle. We delve into the science, data, and real-world impacts, seeking solutions that can ensure a sustainable water future for generations to come.            </h1>
+            <h1 class="flex-grow sm:pr-16 text-2xl font-medium title-font text-gray-200">OUR MISSION : "Riding the Waves of Change: A Water Resilience Revolution"<br><br> Our mission is to understand, adapt to, and mitigate the effects of climate change on the water cycle. We delve into the science, data, and real-world impacts, seeking solutions that can ensure a sustainable water future for generations to come.            </h1>
             <button class="flex-shrink-0 text-white bg-indigo-500 border-0 py-2 px-8 focus:outline-none hover:bg-indigo-600 rounded text-lg mt-10 sm:mt-0"> Explore </button>
           </div>
         </div>
       </div>
       </section> 
-</body>
+      <div class="video-container">
+        <video controls >
+            <source src="Animation2.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+<br>
+<br> <br><br><br><br> <br><br><br>
+<footer class="text-gray-600 body-font">
+
+  <div >
+    <div class="container px-5 py-6 mx-auto flex items-center sm:flex-row flex-col">
+      
+      <p class="text-sm text-gray-500 sm:ml-6 sm:mt-0 mt-4">© 2023 Aqua Knowledge —
+        <a href="https://twitter.com/knyttneve" rel="noopener noreferrer" class="text-gray-600 ml-1" target="_blank">@respective ownwer</a>
+      </p>
+      
+    </div>
+  </div>
+</footer>
+      </body>
+
 </html>
